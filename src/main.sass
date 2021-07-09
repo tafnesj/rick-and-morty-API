@@ -1,0 +1,185 @@
+// General
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Poppins
+
+// Header 
+header
+    background: url('./images/bg.jpg')
+    background-repeat: no-repeat
+    height: 40vh
+    background-size: cover
+    background-position: center
+    color: white
+
+header:before
+    content: ""
+    width: 100%
+    height: 40vh
+    position: absolute
+    top: 0
+    left: 0
+    background-image: linear-gradient(90deg, #1F2937, #111927)
+    opacity: 0.8
+
+// Containers
+.container
+    width: 90%
+    margin: auto
+    height: 100%
+
+.content
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative
+
+.title
+    padding: 0.625rem
+    color: #14A1BB
+    font-family: Get Schwifty
+    font-size: 4.2rem
+    text-shadow: 0.25rem 0.25rem #A5D03C
+    text-align: center
+
+.text
+    font-size: 1rem
+    color: white
+    text-align: center
+    padding: 0.8rem
+
+.characters
+    margin-top: 1.25rem
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.box
+    width: 30%
+    background-image: linear-gradient(90deg, #1F2937, #111927)
+    margin: 0.625rem
+    display: flex
+    padding: 0.8rem
+    box-shadow: 0.3rem 0.25rem 0.6rem #A5D03C
+    color: white
+    border-radius: 0.375rem
+
+    img
+        width: 50%
+        border-radius: 0.5rem
+    .character
+        width: 100%
+        margin: 0.625rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-transform: capitalize
+        font-size: 0.85rem
+        .name
+            font-family: Shlop
+            font-size: 2.2rem
+            color: #A5D03C
+        .subtitle
+            font-weight: 600
+            margin-top: 0.2rem
+        .gender, .origin
+            padding: 0.125rem
+            color: white
+            margin: 0.125rem 0
+            background-color: #364150
+            border-radius: 0.25rem
+        .character-item
+            display: flex
+            flex-direction: row
+            margin-bottom: 0.6rem
+            .specie, .status
+                font-size: 0.95rem
+            .st-alive, .st-dead, .st-unknown
+                width: 0.7rem
+                height: 0.7rem
+                -moz-border-radius: 50%
+                -webkit-border-radius: 50%
+                border-radius: 50%
+                background: #5cb85c
+                align-self: center
+                margin-right: 0.25rem
+            .st-dead
+                background-color: #cf1717
+            .st-alive
+                background-color: #22c522
+            .st-unknown
+                background-color: #e4e022
+
+// Responsive
+@media screen and ( max-width: 1588px )
+    .container
+        width: 85%
+    .box
+        .character
+            .name
+                font-size: 2rem
+
+@media screen and ( max-width: 1450px )
+    .container
+        width: 90%
+
+@media screen and ( max-width: 1300px )
+    .container
+        width: 95%
+
+@media screen and ( max-width: 1230px )
+    .box
+        width: 35%
+
+@media screen and ( max-width: 1230px )
+    .container
+        width: 100%
+
+@media screen and ( max-width: 1080px )
+    .box
+        width: 45%
+
+@media screen and ( max-width: 860px )
+    .container
+        width: 80%
+    .box
+        width: 100%
+
+@media screen and ( max-width: 636px )
+    .title
+        font-size: 3rem
+        padding: 0.32rem
+
+@media screen and ( max-width: 534px )
+    .text
+        font-size: 1rem
+    .container
+        width: 90%
+
+@media screen and ( max-width: 444px )
+    .container
+        width: 95%
+    .title
+        font-size: 4rem
+        padding: 0.125rem
+
+@media screen and ( max-width: 416px )
+    .container
+        width: 100%
+    .title
+        font-size: 4rem
+        padding: none
+
+@media screen and ( max-width: 392px )
+    .title
+        font-size: 3rem
+
+@media screen and ( max-width: 378px )
+    .text
+        font-size: 0.8rem
