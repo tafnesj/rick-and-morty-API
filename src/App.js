@@ -6,6 +6,7 @@ import Characters from './components/Characters';
 
 // Styles
 import './main.sass'
+import './css/index.css'
 
 const App = () => {
   return (

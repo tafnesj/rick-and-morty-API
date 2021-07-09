@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: Shlop;
+  src: url("../fonts/shlop.ttf");
+}
+
+@font-face {
+  font-family: Get Schwifty;
+  src: url("../fonts/get_schwifty.ttf");
+}
